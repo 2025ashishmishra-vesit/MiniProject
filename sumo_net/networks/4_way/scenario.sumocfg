@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="routes/balanced.rou.xml"/>
+        <additional-files value="detectors.add.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1"/>
+    </time>
+    <processing>
+        <ignore-route-errors value="true"/>
+        <collision.action value="warn"/>
+    </processing>
+</configuration>

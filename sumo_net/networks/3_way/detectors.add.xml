@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- Final 25 m of each incoming lane; downstream end is at the stop line. -->
+    <laneAreaDetector id="det_S_0" lane="-E1_0" pos="6.01" length="25.00" file="detector.xml" />
+    <laneAreaDetector id="det_S_1" lane="-E1_1" pos="6.01" length="25.00" file="detector.xml" />
+    <laneAreaDetector id="det_N_0" lane="-E2_0" pos="8.78" length="25.00" file="detector.xml" />
+    <laneAreaDetector id="det_N_1" lane="-E2_1" pos="8.78" length="25.00" file="detector.xml" />
+    <laneAreaDetector id="det_E_0" lane="E0_0" pos="27.62" length="25.00" file="detector.xml" />
+    <laneAreaDetector id="det_E_1" lane="E0_1" pos="27.62" length="25.00" file="detector.xml" />
+</additional>

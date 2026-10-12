@@ -1,0 +1,2 @@
+total_reward,avg_reward,min_reward,avg_queue,max_queue,avg_loss,rl_steps,fixed_steps,rl_frac,switch_requested,switch_applied,switch_blocked,switch_rate,episode,epsilon,duration,scenario
+1997.1000000000004,2.7737500000000006,-4.6,5.006944444444445,10.0,0.0,720,0,1.0,182,182,0,0.25277777777777777,0,1.0,3.9306187629699707,3_way/heavy

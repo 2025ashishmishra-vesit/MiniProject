@@ -1,0 +1,34 @@
+{
+  "scenario": "4_way/test/balanced",
+  "model": "experiments\\reward_tuning\\20260830_101956\\01__tw_0p5__sp_4p0__mg_10__ep_50\\models\\best\\best.pt",
+  "epsilon": 0.0,
+  "total_decisions": 720,
+  "total_applied_switches": 239,
+  "first_legal_decisions": 239,
+  "switches_at_first_legal": 238,
+  "switches_at_first_legal_pct": 99.581589958159,
+  "holds_at_first_legal": 1,
+  "holds_at_first_legal_pct": 0.41841004184100417,
+  "average_green_duration_at_switch": 11.01673640167364,
+  "average_hold_q_at_first_legal": 17.444310084546462,
+  "average_best_switch_q_at_first_legal": 21.985183213046405,
+  "average_best_switch_q_minus_hold_q": 4.540873128499944,
+  "best_switch_q_greater_than_hold_count": 238,
+  "best_switch_q_greater_than_hold_pct": 99.581589958159,
+  "switches_while_served_approach_has_largest_queue": 0,
+  "switches_with_served_approach_mapping": 239,
+  "per_phase_switch_counts": {
+    "0": 61,
+    "1": 60,
+    "2": 60,
+    "3": 58
+  },
+  "target_phase_selection_counts": {
+    "0": 183,
+    "1": 180,
+    "2": 183,
+    "3": 174
+  },
+  "state_phase_mismatches": 0,
+  "served_approach_mapping_note": null
+}

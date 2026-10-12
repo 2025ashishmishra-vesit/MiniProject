@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.9" />
+    <vType id="bus" accel="1.2" decel="4.0" sigma="0.5" length="12" maxSpeed="12" />
+    <vType id="truck" accel="1.0" decel="4.0" sigma="0.5" length="10" maxSpeed="11" />
+    <vType id="DEFAULT_BIKETYPE" vClass="motorcycle" />
+    <vType id="ambulance" accel="3.0" decel="5.0" sigma="0" length="5.0" minGap="2.0" maxSpeed="25.0" color="1,0,0" />
+    <flow id="s_straight_car" type="car" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="578.67" departLane="random" />
+    <flow id="s_straight_bike" type="DEFAULT_BIKETYPE" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="205.33" departLane="random" />
+    <flow id="s_straight_truck" type="truck" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="102.67" departLane="random" />
+    <flow id="s_straight_bus" type="bus" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="46.67" departLane="random" />
+    <flow id="s_left_car" type="car" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="289.33" departLane="random" />
+    <flow id="s_left_bike" type="DEFAULT_BIKETYPE" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="102.67" departLane="random" />
+    <flow id="s_left_truck" type="truck" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="51.33" departLane="random" />
+    <flow id="s_left_bus" type="bus" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="23.33" departLane="random" />
+    <flow id="n_right_car" type="car" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="289.33" departLane="random" />
+    <flow id="n_right_bike" type="DEFAULT_BIKETYPE" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="102.67" departLane="random" />
+    <flow id="n_right_truck" type="truck" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="51.33" departLane="random" />
+    <flow id="n_right_bus" type="bus" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="23.33" departLane="random" />
+    <flow id="n_straight_car" type="car" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="578.67" departLane="random" />
+    <flow id="n_straight_bike" type="DEFAULT_BIKETYPE" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="205.33" departLane="random" />
+    <flow id="n_straight_truck" type="truck" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="102.67" departLane="random" />
+    <flow id="n_straight_bus" type="bus" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="46.67" departLane="random" />
+    <flow id="e_right_car" type="car" from="E0" to="E1" begin="0" end="3600" vehsPerHour="434.00" departLane="random" />
+    <flow id="e_right_bike" type="DEFAULT_BIKETYPE" from="E0" to="E1" begin="0" end="3600" vehsPerHour="154.00" departLane="random" />
+    <flow id="e_right_truck" type="truck" from="E0" to="E1" begin="0" end="3600" vehsPerHour="77.00" departLane="random" />
+    <flow id="e_right_bus" type="bus" from="E0" to="E1" begin="0" end="3600" vehsPerHour="35.00" departLane="random" />
+    <flow id="e_left_car" type="car" from="E0" to="E2" begin="0" end="3600" vehsPerHour="434.00" departLane="random" />
+    <flow id="e_left_bike" type="DEFAULT_BIKETYPE" from="E0" to="E2" begin="0" end="3600" vehsPerHour="154.00" departLane="random" />
+    <flow id="e_left_truck" type="truck" from="E0" to="E2" begin="0" end="3600" vehsPerHour="77.00" departLane="random" />
+    <flow id="e_left_bus" type="bus" from="E0" to="E2" begin="0" end="3600" vehsPerHour="35.00" departLane="random" />
+    <flow id="ambulance_0" type="ambulance" from="-E2" to="E1" begin="509" end="510" number="1" departLane="best" />
+</routes>

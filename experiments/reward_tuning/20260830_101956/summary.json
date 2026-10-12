@@ -1,0 +1,18 @@
+[
+  {
+    "config_id": "01__tw_0p5__sp_4p0__mg_10__ep_50",
+    "model_path": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260830_101956\\01__tw_0p5__sp_4p0__mg_10__ep_50\\models\\final.pt",
+    "best_model_path": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260830_101956\\01__tw_0p5__sp_4p0__mg_10__ep_50\\models\\best\\best.pt",
+    "evaluation_dir": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260830_101956\\01__tw_0p5__sp_4p0__mg_10__ep_50\\logs\\evaluation_test",
+    "episodes": 50,
+    "throughput_weight": 0.5,
+    "switch_penalty": 4.0,
+    "min_green_time": 10,
+    "mean_throughput_improvement_pct": 6.571168734366431,
+    "mean_waiting_reduction_pct": 82.10298279079973,
+    "mean_queue_reduction_pct": 22.31436719254102,
+    "mean_reward_delta_rl_minus_fixed": -593.7865872001356,
+    "mean_rl_switch_rate_pct": 30.055555555555557,
+    "composite_score": 27.438513955391958
+  }
+]

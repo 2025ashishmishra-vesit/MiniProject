@@ -1,0 +1,102 @@
+C:\Python314\python.exe train.py --network all --scenario-selection random --control-mode rl --episodes 50 --save-every 50 --eval-every 50 --throughput-reward-weight 2.0 --switch-penalty 2.7 --min-green-time 10 --checkpoint-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\models\checkpoints --best-model-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\models\best --log-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\logs\train --final-model C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\models\final.pt
+
+Warning: Vehicle 'e_left_car.10' performs emergency braking on lane '-E3_1' with decel=9.00, wished=4.50, severity=1.00, time=739.00.
+Warning: Vehicle 'e_left_car.10' performs emergency stop at the end of lane '-E3_1' because of a red traffic light (decel=-11.34, offset=0.03), time=739.00.
+Warning: Vehicle 'n_left_bike.2' performs emergency stop at the end of lane '-E2_1' because of a red traffic light (decel=-15.30, offset=3.04), time=1189.00.
+Warning: Vehicle 'e_right_car.64' performs emergency braking on lane '-E3_0' with decel=9.00, wished=4.50, severity=1.00, time=2809.00.
+Warning: Vehicle 'e_right_car.64' performs emergency stop at the end of lane '-E3_0' because of a red traffic light (decel=-11.68, offset=0.22), time=2809.00.
+Warning: Vehicle 'w_straight_bike.4' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-10.90, offset=0.81), time=514.00.
+Warning: Vehicle 'w_straight_car.10' performs emergency braking on lane 'E0_0' with decel=9.00, wished=4.50, severity=1.00, time=244.00.
+Warning: Vehicle 'w_straight_car.10' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-12.67, offset=0.68), time=244.00.
+Warning: Vehicle 'w_straight_car.17' performs emergency braking on lane 'E0_0' with decel=9.00, wished=4.50, severity=1.00, time=409.00.
+Warning: Vehicle 'w_straight_car.17' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-12.39, offset=2.97), time=409.00.
+Warning: Vehicle 'e_straight_car.144' performs emergency braking on lane '-E3_1' with decel=9.00, wished=4.50, severity=1.00, time=2644.00.
+Warning: Vehicle 'e_straight_car.144' performs emergency stop at the end of lane '-E3_1' because of a red traffic light (decel=-11.68, offset=1.64), time=2644.00.
+Warning: Vehicle 'w_straight_car.132' performs emergency braking on lane 'E0_0' with decel=9.00, wished=4.50, severity=1.00, time=3124.00.
+Warning: Vehicle 's_right_car.40' performs emergency braking on lane '-E1_0' with decel=9.00, wished=4.50, severity=1.00, time=2934.00.
+Warning: Vehicle 's_straight_bike.40' performs emergency stop at the end of lane '-E1_1' because of a red traffic light (decel=-13.69, offset=3.00), time=3469.00.
+Warning: Vehicle 'e_straight_car.98' performs emergency braking on lane '-E3_1' with decel=9.00, wished=4.50, severity=1.00, time=2979.00.
+Warning: Vehicle 'e_straight_car.98' performs emergency stop at the end of lane '-E3_1' because of a red traffic light (decel=-11.00, offset=0.26), time=2979.00.
+Warning: Vehicle 'e_left_car.10' performs emergency braking on lane '-E3_1' with decel=9.00, wished=4.50, severity=1.00, time=739.00.
+Warning: Vehicle 'e_left_car.10' performs emergency stop at the end of lane '-E3_1' because of a red traffic light (decel=-10.80, offset=0.17), time=739.00.
+Warning: Vehicle 'w_left_car.30' performs emergency braking on lane 'E0_1' with decel=9.00, wished=4.50, severity=1.00, time=2204.00.
+Warning: Vehicle 'w_left_car.35' performs emergency braking on lane 'E0_1' with decel=9.00, wished=4.50, severity=1.00, time=2569.00.
+Warning: Vehicle 'e_right_car.58' performs emergency braking on lane 'E0_0' with decel=9.00, wished=4.50, severity=1.00, time=1599.00.
+Warning: Vehicle 'e_right_car.58' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-9.66, offset=0.50), time=1599.00.
+Warning: Vehicle 'e_left_car.40' performs emergency braking on lane 'E0_1' with decel=9.00, wished=4.50, severity=1.00, time=1344.00.
+Warning: Vehicle 'e_left_car.40' performs emergency stop at the end of lane 'E0_1' because of a red traffic light (decel=-11.45, offset=1.43), time=1344.00.
+Warning: Vehicle 'w_straight_car.67' performs emergency braking on lane 'E0_1' with decel=9.00, wished=4.50, severity=1.00, time=2134.00.
+Warning: Vehicle 'e_left_car.4' performs emergency braking on lane 'E0_1' with decel=9.00, wished=4.50, severity=1.00, time=124.00.
+Warning: Vehicle 'e_left_car.4' performs emergency stop at the end of lane 'E0_1' because of a red traffic light (decel=-12.85, offset=2.98), time=124.00.
+Warning: Vehicle 's_straight_car.111' performs emergency braking on lane '-E1_1' with decel=9.00, wished=4.50, severity=1.00, time=2699.00.
+Warning: Vehicle 'w_straight_bike.6' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-13.16, offset=2.40), time=769.00.
+[DQNAgent] device=cpu | state=14 action=4 | params=119,365
+
+============================================================
+ SUMO RL Traffic Controller - Training
+ Episodes : 50
+ Device   : cpu
+ Scenarios: 15 (all, random)
+ Control  : rl
+ Actions  : 0-3 select configured green-phase indices (masked when unavailable)
+ Reward   : delta_pressure | throughput=2.0 | switch_penalty=2.7 | min_green=10s
+============================================================
+
+Ep    0 | scenario=3_way/heavy        | reward=  3581.7 | avg_queue= 11.7 | RL%=100.0 | sw= 28.2% | eps=1.0000 | loss=0.0000 | 5.5s
+Ep    1 | scenario=4_way/medium       | reward=  3348.8 | avg_queue= 17.9 | RL%=100.0 | sw= 30.6% | eps=0.8021 | loss=5.4633 | 7.1s
+Ep    2 | scenario=4_way/heavy        | reward=  3592.3 | avg_queue= 19.1 | RL%=100.0 | sw= 30.8% | eps=0.5595 | loss=4.6609 | 10.5s
+Ep    3 | scenario=3_way/random_2     | reward=  3655.5 | avg_queue=  9.7 | RL%=100.0 | sw= 30.8% | eps=0.3903 | loss=4.1220 | 8.9s
+Ep    4 | scenario=3_way/random_2     | reward=  3412.6 | avg_queue=  9.6 | RL%=100.0 | sw= 31.2% | eps=0.2723 | loss=3.7757 | 9.0s
+Ep    5 | scenario=4_way/ns_heavy     | reward=  2929.0 | avg_queue= 13.1 | RL%=100.0 | sw= 32.6% | eps=0.1900 | loss=3.6992 | 9.4s
+Ep    6 | scenario=3_way/heavy        | reward=  3482.3 | avg_queue= 10.8 | RL%=100.0 | sw= 31.7% | eps=0.1325 | loss=3.6240 | 9.6s
+Ep    7 | scenario=4_way/light        | reward=  1250.3 | avg_queue=  3.4 | RL%=100.0 | sw= 32.8% | eps=0.0924 | loss=3.5949 | 6.6s
+Ep    8 | scenario=3_way/medium       | reward=  3843.7 | avg_queue=  9.0 | RL%=100.0 | sw= 27.8% | eps=0.0645 | loss=3.5644 | 7.7s
+Ep    9 | scenario=3_way/heavy        | reward=  3725.7 | avg_queue= 10.6 | RL%=100.0 | sw= 28.5% | eps=0.0450 | loss=3.4036 | 9.4s
+Ep   10 | scenario=4_way/balanced     | reward=  3469.8 | avg_queue= 16.2 | RL%=100.0 | sw= 33.2% | eps=0.0314 | loss=3.3782 | 8.9s
+Ep   11 | scenario=4_way/random_2     | reward=  3459.6 | avg_queue= 17.6 | RL%=100.0 | sw= 33.1% | eps=0.0219 | loss=3.3283 | 10.2s
+Ep   12 | scenario=4_way/medium       | reward=  3636.8 | avg_queue= 15.1 | RL%=100.0 | sw= 32.8% | eps=0.0200 | loss=3.2764 | 8.6s
+Ep   13 | scenario=4_way/medium       | reward=  3592.9 | avg_queue= 16.8 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.2242 | 8.7s
+Ep   14 | scenario=4_way/light        | reward=  1281.0 | avg_queue=  7.1 | RL%=100.0 | sw= 31.5% | eps=0.0200 | loss=3.2865 | 7.0s
+Ep   15 | scenario=4_way/medium       | reward=  3661.3 | avg_queue= 17.8 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.3008 | 8.9s
+Ep   16 | scenario=4_way/balanced     | reward=  3778.0 | avg_queue= 19.2 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.2681 | 9.9s
+Ep   17 | scenario=3_way/heavy        | reward=  3586.9 | avg_queue= 10.6 | RL%=100.0 | sw= 28.3% | eps=0.0200 | loss=3.2534 | 10.0s
+Ep   18 | scenario=4_way/ns_heavy     | reward=  3006.0 | avg_queue= 12.3 | RL%=100.0 | sw= 31.2% | eps=0.0200 | loss=3.2514 | 9.1s
+Ep   19 | scenario=3_way/random_2     | reward=  3614.9 | avg_queue=  9.6 | RL%=100.0 | sw= 27.6% | eps=0.0200 | loss=3.2532 | 8.8s
+Ep   20 | scenario=4_way/balanced     | reward=  3808.3 | avg_queue= 18.6 | RL%=100.0 | sw= 33.1% | eps=0.0200 | loss=3.2845 | 9.0s
+Ep   21 | scenario=3_way/random_1     | reward=  3735.3 | avg_queue=  8.3 | RL%=100.0 | sw= 24.3% | eps=0.0200 | loss=3.3002 | 7.8s
+Ep   22 | scenario=3_way/light        | reward=  1616.8 | avg_queue=  4.2 | RL%=100.0 | sw= 16.9% | eps=0.0200 | loss=3.3715 | 6.2s
+Ep   23 | scenario=4_way/random_1     | reward=  3318.7 | avg_queue= 15.1 | RL%=100.0 | sw= 32.5% | eps=0.0200 | loss=3.4159 | 9.1s
+Ep   24 | scenario=4_way/medium       | reward=  3639.2 | avg_queue= 17.3 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.3928 | 8.8s
+Ep   25 | scenario=4_way/heavy        | reward=  3499.1 | avg_queue= 18.4 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.3809 | 10.6s
+Ep   26 | scenario=3_way/random_2     | reward=  3707.9 | avg_queue=  9.4 | RL%=100.0 | sw= 27.5% | eps=0.0200 | loss=3.3560 | 8.8s
+Ep   27 | scenario=4_way/ns_heavy     | reward=  2991.5 | avg_queue= 11.9 | RL%=100.0 | sw= 33.1% | eps=0.0200 | loss=3.3937 | 11.0s
+Ep   28 | scenario=4_way/ew_heavy     | reward=  3199.6 | avg_queue= 12.8 | RL%=100.0 | sw= 31.4% | eps=0.0200 | loss=3.4039 | 10.8s
+Ep   29 | scenario=3_way/random_2     | reward=  3695.3 | avg_queue=  9.5 | RL%=100.0 | sw= 27.6% | eps=0.0200 | loss=3.4591 | 9.3s
+Ep   30 | scenario=3_way/random_2     | reward=  3790.9 | avg_queue=  9.3 | RL%=100.0 | sw= 27.1% | eps=0.0200 | loss=3.4965 | 8.9s
+Ep   31 | scenario=3_way/medium       | reward=  3791.9 | avg_queue=  8.4 | RL%=100.0 | sw= 27.2% | eps=0.0200 | loss=3.5288 | 7.8s
+Ep   32 | scenario=3_way/heavy        | reward=  3518.1 | avg_queue= 10.9 | RL%=100.0 | sw= 30.7% | eps=0.0200 | loss=3.5296 | 10.0s
+Ep   33 | scenario=4_way/ew_heavy     | reward=  3265.3 | avg_queue= 12.9 | RL%=100.0 | sw= 29.9% | eps=0.0200 | loss=3.5851 | 9.6s
+Ep   34 | scenario=4_way/random_1     | reward=  3345.7 | avg_queue= 15.2 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.6213 | 8.8s
+Ep   35 | scenario=3_way/balanced     | reward=  4038.9 | avg_queue=  9.8 | RL%=100.0 | sw= 28.6% | eps=0.0200 | loss=3.5622 | 7.6s
+Ep   36 | scenario=4_way/ns_heavy     | reward=  2945.3 | avg_queue= 12.0 | RL%=100.0 | sw= 33.1% | eps=0.0200 | loss=3.5907 | 9.1s
+Ep   37 | scenario=4_way/ns_heavy     | reward=  2991.7 | avg_queue= 12.3 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.6001 | 9.2s
+Ep   38 | scenario=3_way/ns_heavy     | reward=  3672.7 | avg_queue=  8.4 | RL%=100.0 | sw= 25.3% | eps=0.0200 | loss=3.6069 | 8.3s
+Ep   39 | scenario=4_way/heavy        | reward=  3524.9 | avg_queue= 18.8 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.6336 | 10.4s
+Ep   40 | scenario=3_way/light        | reward=  1636.2 | avg_queue=  3.1 | RL%=100.0 | sw= 17.5% | eps=0.0200 | loss=3.7184 | 6.0s
+Ep   41 | scenario=4_way/medium       | reward=  3628.4 | avg_queue= 17.9 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.8469 | 8.8s
+Ep   42 | scenario=4_way/light        | reward=  1413.2 | avg_queue=  3.9 | RL%=100.0 | sw= 26.7% | eps=0.0200 | loss=3.8203 | 6.8s
+Ep   43 | scenario=3_way/random_1     | reward=  3614.6 | avg_queue=  8.6 | RL%=100.0 | sw= 27.2% | eps=0.0200 | loss=3.9280 | 7.9s
+Ep   44 | scenario=3_way/heavy        | reward=  3568.8 | avg_queue= 10.9 | RL%=100.0 | sw= 31.5% | eps=0.0200 | loss=3.9312 | 9.2s
+Ep   45 | scenario=4_way/random_2     | reward=  3422.5 | avg_queue= 18.4 | RL%=100.0 | sw= 33.2% | eps=0.0200 | loss=3.9254 | 10.0s
+Ep   46 | scenario=3_way/random_2     | reward=  3701.3 | avg_queue=  9.2 | RL%=100.0 | sw= 28.6% | eps=0.0200 | loss=3.9510 | 9.6s
+Ep   47 | scenario=4_way/random_1     | reward=  3234.0 | avg_queue= 14.4 | RL%=100.0 | sw= 33.1% | eps=0.0200 | loss=3.9430 | 8.9s
+Ep   48 | scenario=4_way/light        | reward=  1354.1 | avg_queue=  4.4 | RL%=100.0 | sw= 28.9% | eps=0.0200 | loss=4.0489 | 6.9s
+Ep   49 | scenario=4_way/medium       | reward=  3650.0 | avg_queue= 15.9 | RL%=100.0 | sw= 33.1% | eps=0.0200 | loss=4.1242 | 8.5s
+[DQNAgent] Saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\models\checkpoints\ep_50.pt
+  EVAL reward=3022.2 queue=9.8
+[DQNAgent] Saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\models\best\best.pt
+  New best model saved (3022.2)
+[DQNAgent] Saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\models\final.pt
+[Logger] History saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_231457\01__tw_2p0__sp_2p7__mg_10__ep_50\logs\train\train_20260829_231500.json
+
+[train] Done. Best eval reward: 3022.165334128233

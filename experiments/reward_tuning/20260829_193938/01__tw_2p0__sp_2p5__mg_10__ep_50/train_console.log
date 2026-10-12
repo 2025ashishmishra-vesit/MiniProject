@@ -1,0 +1,69 @@
+C:\Python314\python.exe train.py --network all --scenario-selection random --control-mode rl --episodes 50 --save-every 50 --eval-every 0 --throughput-reward-weight 2.0 --switch-penalty 2.5 --min-green-time 10 --checkpoint-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\models\checkpoints --best-model-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\models\best --log-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\logs\train --final-model C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\models\final.pt
+
+[DQNAgent] device=cpu | state=12 action=2 | params=118,723
+
+============================================================
+ SUMO RL Traffic Controller - Training
+ Episodes : 50
+ Device   : cpu
+ Scenarios: 15 (all, random)
+ Control  : rl
+ Actions  : 0=keep phase, 1=switch phase
+ Reward   : delta_pressure | throughput=2.0 | switch_penalty=2.5 | min_green=10s
+============================================================
+
+Ep    0 | scenario=3_way/heavy        | reward=  3626.6 | avg_queue=  5.0 | RL%=100.0 | sw= 25.4% | eps=1.0000 | loss=0.0000 | 4.4s
+Ep    1 | scenario=4_way/medium       | reward=  3711.6 | avg_queue=  8.2 | RL%=100.0 | sw= 24.3% | eps=0.8021 | loss=3.6519 | 6.2s
+Ep    2 | scenario=4_way/heavy        | reward=  3611.4 | avg_queue=  8.3 | RL%=100.0 | sw= 24.4% | eps=0.5595 | loss=3.4139 | 10.2s
+Ep    3 | scenario=3_way/random_2     | reward=  3693.5 | avg_queue=  5.2 | RL%=100.0 | sw= 19.3% | eps=0.3903 | loss=3.4398 | 9.1s
+Ep    4 | scenario=3_way/random_2     | reward=  3826.3 | avg_queue=  5.2 | RL%=100.0 | sw= 16.7% | eps=0.2723 | loss=3.5307 | 9.0s
+Ep    5 | scenario=4_way/ns_heavy     | reward=  3328.5 | avg_queue=  6.8 | RL%=100.0 | sw= 22.2% | eps=0.1900 | loss=3.8402 | 9.1s
+Ep    6 | scenario=3_way/heavy        | reward=  3606.7 | avg_queue=  4.9 | RL%=100.0 | sw= 26.5% | eps=0.1325 | loss=4.2807 | 9.7s
+Ep    7 | scenario=4_way/light        | reward=  1544.8 | avg_queue=  1.6 | RL%=100.0 | sw= 21.2% | eps=0.0924 | loss=4.4966 | 7.0s
+Ep    8 | scenario=3_way/medium       | reward=  3551.9 | avg_queue=  4.2 | RL%=100.0 | sw= 24.3% | eps=0.0645 | loss=4.6812 | 7.3s
+Ep    9 | scenario=3_way/heavy        | reward=  3580.9 | avg_queue=  4.7 | RL%=100.0 | sw= 27.2% | eps=0.0450 | loss=4.8048 | 9.3s
+Ep   10 | scenario=4_way/balanced     | reward=  3671.7 | avg_queue=  8.4 | RL%=100.0 | sw= 30.7% | eps=0.0314 | loss=4.8457 | 8.5s
+Ep   11 | scenario=4_way/random_2     | reward=  3378.5 | avg_queue=  7.7 | RL%=100.0 | sw= 30.7% | eps=0.0219 | loss=4.6622 | 9.6s
+Ep   12 | scenario=4_way/medium       | reward=  3603.1 | avg_queue=  8.2 | RL%=100.0 | sw= 31.0% | eps=0.0200 | loss=4.5026 | 8.9s
+Ep   13 | scenario=4_way/medium       | reward=  3197.6 | avg_queue=  7.4 | RL%=100.0 | sw= 26.5% | eps=0.0200 | loss=4.3651 | 8.7s
+Ep   14 | scenario=4_way/light        | reward=  1608.4 | avg_queue=  4.5 | RL%=100.0 | sw= 15.8% | eps=0.0200 | loss=4.3231 | 7.4s
+Ep   15 | scenario=4_way/medium       | reward=  3079.3 | avg_queue=  7.9 | RL%=100.0 | sw= 25.3% | eps=0.0200 | loss=4.2517 | 8.4s
+Ep   16 | scenario=4_way/balanced     | reward=  3635.8 | avg_queue=  8.3 | RL%=100.0 | sw= 31.1% | eps=0.0200 | loss=4.1721 | 8.1s
+Ep   17 | scenario=3_way/heavy        | reward=  3616.8 | avg_queue=  5.0 | RL%=100.0 | sw= 29.4% | eps=0.0200 | loss=4.2208 | 6.8s
+Ep   18 | scenario=4_way/ns_heavy     | reward=  2956.6 | avg_queue=  4.5 | RL%=100.0 | sw= 31.5% | eps=0.0200 | loss=4.2813 | 6.8s
+Ep   19 | scenario=3_way/random_2     | reward=  3554.1 | avg_queue=  5.2 | RL%=100.0 | sw= 27.1% | eps=0.0200 | loss=4.2963 | 7.8s
+Ep   20 | scenario=4_way/balanced     | reward=  3678.0 | avg_queue=  8.4 | RL%=100.0 | sw= 31.0% | eps=0.0200 | loss=4.2970 | 8.7s
+Ep   21 | scenario=3_way/random_1     | reward=  3548.1 | avg_queue=  4.5 | RL%=100.0 | sw= 25.3% | eps=0.0200 | loss=4.2480 | 8.1s
+Ep   22 | scenario=3_way/light        | reward=  1390.9 | avg_queue=  0.5 | RL%=100.0 | sw= 28.5% | eps=0.0200 | loss=4.3985 | 6.2s
+Ep   23 | scenario=4_way/random_1     | reward=  3313.4 | avg_queue=  6.5 | RL%=100.0 | sw= 30.3% | eps=0.0200 | loss=4.4209 | 9.1s
+Ep   24 | scenario=4_way/medium       | reward=  3555.9 | avg_queue=  8.4 | RL%=100.0 | sw= 30.8% | eps=0.0200 | loss=4.3575 | 8.9s
+Ep   25 | scenario=4_way/heavy        | reward=  3449.4 | avg_queue=  8.2 | RL%=100.0 | sw= 29.6% | eps=0.0200 | loss=4.3616 | 11.0s
+Ep   26 | scenario=3_way/random_2     | reward=  3694.9 | avg_queue=  5.0 | RL%=100.0 | sw= 26.1% | eps=0.0200 | loss=4.3085 | 8.8s
+Ep   27 | scenario=4_way/ns_heavy     | reward=  3121.5 | avg_queue=  4.8 | RL%=100.0 | sw= 29.4% | eps=0.0200 | loss=4.2437 | 9.5s
+Ep   28 | scenario=4_way/ew_heavy     | reward=  2780.5 | avg_queue=  6.6 | RL%=100.0 | sw= 23.3% | eps=0.0200 | loss=4.2172 | 9.5s
+Ep   29 | scenario=3_way/random_2     | reward=  3621.5 | avg_queue=  5.1 | RL%=100.0 | sw= 25.8% | eps=0.0200 | loss=4.2292 | 8.0s
+Ep   30 | scenario=3_way/random_2     | reward=  3636.7 | avg_queue=  5.1 | RL%=100.0 | sw= 25.8% | eps=0.0200 | loss=4.3183 | 9.0s
+Ep   31 | scenario=3_way/medium       | reward=  3653.3 | avg_queue=  4.1 | RL%=100.0 | sw= 26.8% | eps=0.0200 | loss=4.3290 | 7.3s
+Ep   32 | scenario=3_way/heavy        | reward=  3499.9 | avg_queue=  4.9 | RL%=100.0 | sw= 28.5% | eps=0.0200 | loss=4.2665 | 9.7s
+Ep   33 | scenario=4_way/ew_heavy     | reward=  2724.6 | avg_queue=  6.2 | RL%=100.0 | sw= 23.8% | eps=0.0200 | loss=4.2543 | 9.2s
+Ep   34 | scenario=4_way/random_1     | reward=  3226.1 | avg_queue=  6.5 | RL%=100.0 | sw= 28.3% | eps=0.0200 | loss=4.3169 | 8.7s
+Ep   35 | scenario=3_way/balanced     | reward=  3912.6 | avg_queue=  4.4 | RL%=100.0 | sw= 26.2% | eps=0.0200 | loss=4.3584 | 7.7s
+Ep   36 | scenario=4_way/ns_heavy     | reward=  3011.2 | avg_queue=  4.7 | RL%=100.0 | sw= 30.8% | eps=0.0200 | loss=4.2961 | 8.7s
+Ep   37 | scenario=4_way/ns_heavy     | reward=  3105.6 | avg_queue=  4.7 | RL%=100.0 | sw= 30.4% | eps=0.0200 | loss=4.2784 | 9.1s
+Ep   38 | scenario=3_way/ns_heavy     | reward=  3649.8 | avg_queue=  3.0 | RL%=100.0 | sw= 27.9% | eps=0.0200 | loss=4.2114 | 8.4s
+Ep   39 | scenario=4_way/heavy        | reward=  3473.3 | avg_queue=  8.3 | RL%=100.0 | sw= 29.9% | eps=0.0200 | loss=4.2038 | 10.6s
+Ep   40 | scenario=3_way/light        | reward=  1482.9 | avg_queue=  1.2 | RL%=100.0 | sw= 23.8% | eps=0.0200 | loss=4.2389 | 6.6s
+Ep   41 | scenario=4_way/medium       | reward=  3394.4 | avg_queue=  8.2 | RL%=100.0 | sw= 29.2% | eps=0.0200 | loss=4.2540 | 8.4s
+Ep   42 | scenario=4_way/light        | reward=  1446.0 | avg_queue=  1.6 | RL%=100.0 | sw= 25.6% | eps=0.0200 | loss=4.2843 | 7.0s
+Ep   43 | scenario=3_way/random_1     | reward=  3501.0 | avg_queue=  4.8 | RL%=100.0 | sw= 24.4% | eps=0.0200 | loss=4.3506 | 7.6s
+Ep   44 | scenario=3_way/heavy        | reward=  3619.5 | avg_queue=  5.0 | RL%=100.0 | sw= 28.1% | eps=0.0200 | loss=4.4065 | 9.3s
+Ep   45 | scenario=4_way/random_2     | reward=  3388.4 | avg_queue=  8.0 | RL%=100.0 | sw= 28.6% | eps=0.0200 | loss=4.4435 | 9.6s
+Ep   46 | scenario=3_way/random_2     | reward=  3565.3 | avg_queue=  5.1 | RL%=100.0 | sw= 27.2% | eps=0.0200 | loss=4.4113 | 9.0s
+Ep   47 | scenario=4_way/random_1     | reward=  3126.4 | avg_queue=  6.5 | RL%=100.0 | sw= 28.1% | eps=0.0200 | loss=4.4251 | 8.3s
+Ep   48 | scenario=4_way/light        | reward=  1602.4 | avg_queue=  2.6 | RL%=100.0 | sw= 16.7% | eps=0.0200 | loss=4.4435 | 7.0s
+Ep   49 | scenario=4_way/medium       | reward=  3545.4 | avg_queue=  8.1 | RL%=100.0 | sw= 31.2% | eps=0.0200 | loss=4.5159 | 8.5s
+[DQNAgent] Saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\models\checkpoints\ep_50.pt
+[DQNAgent] Saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\models\final.pt
+[Logger] History saved -> C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_193938\01__tw_2p0__sp_2p5__mg_10__ep_50\logs\train\train_20260829_193941.json
+
+[train] Done. Best eval reward: -inf

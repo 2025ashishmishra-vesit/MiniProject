@@ -1,0 +1,10 @@
+{
+  "throughput_weight": 1.0,
+  "switch_penalty": 2.7,
+  "min_green_time": 10,
+  "episodes": 50,
+  "network": "all",
+  "scenario_selection": "random",
+  "control_mode": "rl",
+  "seed": 42
+}

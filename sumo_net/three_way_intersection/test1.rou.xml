@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.9"/>
+    <vType id="bus" accel="1.2" decel="4.0" sigma="0.5" length="12" maxSpeed="12"/>
+    <vType id="truck" accel="1.0" decel="4.0" sigma="0.5" length="10" maxSpeed="11"/>
+
+    <!-- ========================= -->
+    <!-- HEAVY ROAD (-E1) ~1400 veh/hr -->
+    <!-- ========================= -->
+
+    <flow id="f1_car" type="car" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="840" departLane="random"/>
+    <flow id="f1_bike" type="DEFAULT_BIKETYPE" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="420" departLane="random"/>
+    <flow id="f1_truck" type="truck" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="100" departLane="random"/>
+    <flow id="f1_bus" type="bus" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="40" departLane="random"/>
+
+    <!-- ========================= -->
+    <!-- MEDIUM ROAD (-E2) ~900 veh/hr -->
+    <!-- ========================= -->
+
+    <flow id="f2_car" type="car" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="540" departLane="random"/>
+    <flow id="f2_bike" type="DEFAULT_BIKETYPE" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="270" departLane="random"/>
+    <flow id="f2_truck" type="truck" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="60" departLane="random"/>
+    <flow id="f2_bus" type="bus" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="30" departLane="random"/>
+
+    <!-- ========================= -->
+    <!-- LIGHT ROAD (E0) ~500 veh/hr -->
+    <!-- ========================= -->
+
+    <flow id="f3_car" type="car" from="E0" to="E1" begin="0" end="3600" vehsPerHour="300" departLane="random"/>
+    <flow id="f3_bike" type="DEFAULT_BIKETYPE" from="E0" to="E2" begin="0" end="3600" vehsPerHour="150" departLane="random"/>
+    <flow id="f3_truck" type="truck" from="E0" to="E1" begin="0" end="3600" vehsPerHour="35" departLane="random"/>
+    <flow id="f3_bus" type="bus" from="E0" to="E2" begin="0" end="3600" vehsPerHour="15" departLane="random"/>
+
+</routes>

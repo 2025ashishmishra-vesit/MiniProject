@@ -1,0 +1,4 @@
+torch>=2.0.0
+numpy>=1.24.0
+# traci is bundled with SUMO — install SUMO and set SUMO_HOME
+# pip install eclipse-sumo   OR   apt-get install sumo sumo-tools

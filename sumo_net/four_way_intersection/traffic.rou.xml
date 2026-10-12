@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.9"/>
+    <vType id="bus" accel="1.2" decel="4.0" sigma="0.5" length="12" maxSpeed="12"/>
+    <vType id="truck" accel="1.0" decel="4.0" sigma="0.5" length="10" maxSpeed="11"/>
+    <vType id="DEFAULT_BIKETYPE" vClass="motorcycle"/>
+
+    <!-- FROM -E1 -->
+    <flow id="f1_car" type="car" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="800"/>
+    <flow id="f1_bike" type="DEFAULT_BIKETYPE" from="-E1" to="E2" begin="0" end="3600" vehsPerHour="400"/>
+    <flow id="f1_truck" type="truck" from="-E1" to="E3" begin="0" end="3600" vehsPerHour="120"/>
+    <flow id="f1_bus" type="bus" from="-E1" to="-E0" begin="0" end="3600" vehsPerHour="40"/>
+
+    <!-- FROM -E2 (FIXED HERE) -->
+    <flow id="f2_car" type="car" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="600"/>
+    <flow id="f2_bike" type="DEFAULT_BIKETYPE" from="-E2" to="E1" begin="0" end="3600" vehsPerHour="300"/>
+    <flow id="f2_truck" type="truck" from="-E2" to="E3" begin="0" end="3600" vehsPerHour="70"/>
+    <flow id="f2_bus" type="bus" from="-E2" to="-E0" begin="0" end="3600" vehsPerHour="30"/>
+
+    <!-- FROM -E3 -->
+    <flow id="f3_car" type="car" from="-E3" to="-E0" begin="0" end="3600" vehsPerHour="500"/>
+    <flow id="f3_bike" type="DEFAULT_BIKETYPE" from="-E3" to="-E0" begin="0" end="3600" vehsPerHour="250"/>
+    <flow id="f3_truck" type="truck" from="-E3" to="E1" begin="0" end="3600" vehsPerHour="60"/>
+    <flow id="f3_bus" type="bus" from="-E3" to="E2" begin="0" end="3600" vehsPerHour="30"/>
+
+    <!-- FROM E0 -->
+    <flow id="f4_car" type="car" from="E0" to="E3" begin="0" end="3600" vehsPerHour="350"/>
+    <flow id="f4_bike" type="DEFAULT_BIKETYPE" from="E0" to="E3" begin="0" end="3600" vehsPerHour="180"/>
+    <flow id="f4_truck" type="truck" from="E0" to="E2" begin="0" end="3600" vehsPerHour="40"/>
+    <flow id="f4_bus" type="bus" from="E0" to="E1" begin="0" end="3600" vehsPerHour="20"/>
+
+</routes>

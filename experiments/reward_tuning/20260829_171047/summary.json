@@ -1,0 +1,34 @@
+[
+  {
+    "config_id": "02__tw_5p0__sp_0p7__mg_15__ep_50",
+    "model_path": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260829_171047\\02__tw_5p0__sp_0p7__mg_15__ep_50\\models\\final.pt",
+    "best_model_path": "",
+    "evaluation_dir": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260829_171047\\02__tw_5p0__sp_0p7__mg_15__ep_50\\logs\\evaluation_test",
+    "episodes": 50,
+    "throughput_weight": 5.0,
+    "switch_penalty": 0.7,
+    "min_green_time": 15,
+    "mean_throughput_improvement_pct": 4.480462044758021,
+    "mean_waiting_reduction_pct": 52.12193297476452,
+    "mean_queue_reduction_pct": 16.499426025930674,
+    "mean_reward_delta_rl_minus_fixed": 312.4266666666667,
+    "mean_rl_switch_rate_pct": 23.75925925925926,
+    "composite_score": 17.609933266412824
+  },
+  {
+    "config_id": "01__tw_2p0__sp_0p3__mg_10__ep_50",
+    "model_path": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260829_171047\\01__tw_2p0__sp_0p3__mg_10__ep_50\\models\\final.pt",
+    "best_model_path": "",
+    "evaluation_dir": "C:\\Users\\Ankit\\Downloads\\rl_model_fixed\\sumo_rl_traffic\\experiments\\reward_tuning\\20260829_171047\\01__tw_2p0__sp_0p3__mg_10__ep_50\\logs\\evaluation_test",
+    "episodes": 50,
+    "throughput_weight": 2.0,
+    "switch_penalty": 0.3,
+    "min_green_time": 10,
+    "mean_throughput_improvement_pct": -2.2465991905202918,
+    "mean_waiting_reduction_pct": -125.06151417771088,
+    "mean_queue_reduction_pct": 12.48955378418023,
+    "mean_reward_delta_rl_minus_fixed": -246.71333333333337,
+    "mean_rl_switch_rate_pct": 26.65740740740741,
+    "composite_score": -34.304285408061716
+  }
+]

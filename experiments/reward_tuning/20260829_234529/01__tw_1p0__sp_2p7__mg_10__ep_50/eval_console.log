@@ -1,0 +1,58 @@
+C:\Python314\python.exe evaluate_compare.py --network all --route-split test --model C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_234529\01__tw_1p0__sp_2p7__mg_10__ep_50\models\final.pt --episodes-per-scenario 1 --rl-control-mode rl --throughput-reward-weight 1.0 --switch-penalty 2.7 --min-green-time 10 --output-dir C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_234529\01__tw_1p0__sp_2p7__mg_10__ep_50\logs\evaluation_test
+
+Warning: Vehicle 's_straight_car.34' performs emergency braking on lane '-E1_1' with decel=9.00, wished=4.50, severity=1.00, time=1294.00.
+Warning: Vehicle 'w_right_car.38' performs emergency braking on lane 'E0_0' with decel=9.00, wished=4.50, severity=1.00, time=3394.00.
+Warning: Vehicle 'w_right_car.38' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-10.00, offset=0.57), time=3394.00.
+Warning: Vehicle 'w_right_car.11' performs emergency braking on lane 'E0_0' with decel=9.00, wished=4.50, severity=1.00, time=574.00.
+Warning: Vehicle 'w_right_car.11' performs emergency stop at the end of lane 'E0_0' because of a red traffic light (decel=-11.72, offset=0.16), time=574.00.
+[DQNAgent] device=cpu | state=14 action=4 | params=119,365
+[DQNAgent] Loaded <- C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_234529\01__tw_1p0__sp_2p7__mg_10__ep_50\models\final.pt  (epsilon=0.0200)
+[eval] 3_way/test/balanced: RL model
+[eval] 3_way/test/balanced: fixed time
+[eval] 3_way/test/heavy: RL model
+[eval] 3_way/test/heavy: fixed time
+[eval] 3_way/test/light: RL model
+[eval] 3_way/test/light: fixed time
+[eval] 3_way/test/medium: RL model
+[eval] 3_way/test/medium: fixed time
+[eval] 3_way/test/ns_heavy: RL model
+[eval] 3_way/test/ns_heavy: fixed time
+[eval] 3_way/test/random_1: RL model
+[eval] 3_way/test/random_1: fixed time
+[eval] 3_way/test/random_2: RL model
+[eval] 3_way/test/random_2: fixed time
+[eval] 4_way/test/balanced: RL model
+[eval] 4_way/test/balanced: fixed time
+[eval] 4_way/test/ew_heavy: RL model
+[eval] 4_way/test/ew_heavy: fixed time
+[eval] 4_way/test/heavy: RL model
+[eval] 4_way/test/heavy: fixed time
+[eval] 4_way/test/light: RL model
+[eval] 4_way/test/light: fixed time
+[eval] 4_way/test/medium: RL model
+[eval] 4_way/test/medium: fixed time
+[eval] 4_way/test/ns_heavy: RL model
+[eval] 4_way/test/ns_heavy: fixed time
+[eval] 4_way/test/random_1: RL model
+[eval] 4_way/test/random_1: fixed time
+[eval] 4_way/test/random_2: RL model
+[eval] 4_way/test/random_2: fixed time
+
+Scenario comparison: positive queue/waiting reduction and throughput improvement mean RL is better.
+3_way/test/balanced | queue reduction=  24.54% | waiting reduction=  84.98% | throughput improvement=   7.15% | rl switch= 31.67% | reward delta=    -346.5
+3_way/test/heavy   | queue reduction=  15.98% | waiting reduction=  82.56% | throughput improvement=   4.84% | rl switch= 31.94% | reward delta=    -397.8
+3_way/test/light   | queue reduction=  43.56% | waiting reduction=  67.76% | throughput improvement=   0.53% | rl switch= 19.58% | reward delta=    -197.3
+3_way/test/medium  | queue reduction=  22.94% | waiting reduction=  84.15% | throughput improvement=   4.22% | rl switch= 30.83% | reward delta=    -355.0
+3_way/test/ns_heavy | queue reduction=  21.50% | waiting reduction=  81.40% | throughput improvement=   5.95% | rl switch= 30.69% | reward delta=    -358.2
+3_way/test/random_1 | queue reduction=  20.83% | waiting reduction=  82.82% | throughput improvement=   6.72% | rl switch= 30.14% | reward delta=    -304.3
+3_way/test/random_2 | queue reduction=  18.85% | waiting reduction=  82.79% | throughput improvement=   3.44% | rl switch= 31.67% | reward delta=    -420.6
+4_way/test/balanced | queue reduction=   4.24% | waiting reduction=  80.05% | throughput improvement=   9.04% | rl switch= 33.19% | reward delta=    -288.4
+4_way/test/ew_heavy | queue reduction=  20.68% | waiting reduction=  83.00% | throughput improvement=   6.63% | rl switch= 33.19% | reward delta=    -357.0
+4_way/test/heavy   | queue reduction=   6.46% | waiting reduction=  80.45% | throughput improvement=   8.56% | rl switch= 33.19% | reward delta=    -355.3
+4_way/test/light   | queue reduction=  61.89% | waiting reduction=  87.45% | throughput improvement=   0.52% | rl switch= 29.58% | reward delta=    -439.3
+4_way/test/medium  | queue reduction=  17.95% | waiting reduction=  83.03% | throughput improvement=   7.90% | rl switch= 33.19% | reward delta=    -323.2
+4_way/test/ns_heavy | queue reduction=  23.33% | waiting reduction=  83.33% | throughput improvement=  12.18% | rl switch= 32.92% | reward delta=    -280.9
+4_way/test/random_1 | queue reduction=  12.63% | waiting reduction=  81.29% | throughput improvement=   8.15% | rl switch= 33.19% | reward delta=    -359.5
+4_way/test/random_2 | queue reduction=  11.13% | waiting reduction=  81.77% | throughput improvement=   8.05% | rl switch= 33.19% | reward delta=    -336.3
+
+[eval] Saved results to C:\Users\Ankit\Downloads\rl_model_fixed\sumo_rl_traffic\experiments\reward_tuning\20260829_234529\01__tw_1p0__sp_2p7__mg_10__ep_50\logs\evaluation_test
