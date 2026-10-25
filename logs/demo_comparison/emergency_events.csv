@@ -1,0 +1,19 @@
+mode,sim_time,vehicle_id,event,direction,edge,details
+fixed,70.0,demo_ambulance_70_N,INSERTED,N,-E2,magenta ambulance
+fixed,130.0,demo_ambulance_70_N,VISIBLE,N,-E2,Vehicle has entered simulation
+fixed,250.0,demo_ambulance_70_N,LEFT_SIMULATION,N,,Not present after this simulation window
+fixed,360.0,demo_ambulance_360_W,INSERTED,W,E0,magenta ambulance
+fixed,380.0,demo_ambulance_360_W,VISIBLE,W,E0,Vehicle has entered simulation
+fixed,495.0,demo_ambulance_360_W,LEFT_SIMULATION,W,,Not present after this simulation window
+rl,70.0,demo_ambulance_70_N,INSERTED,N,-E2,magenta ambulance
+rl,75.0,demo_ambulance_70_N,VISIBLE,N,-E2,Vehicle has entered simulation
+rl,80.0,demo_ambulance_70_N,PRIORITY_REQUESTED,north,,requested_phase=3; actual_phase=1
+rl,85.0,demo_ambulance_70_N,PRIORITY_REQUESTED,north,,requested_phase=3; actual_phase=1
+rl,90.0,demo_ambulance_70_N,PRIORITY_REQUESTED,north,,requested_phase=3; actual_phase=1
+rl,95.0,demo_ambulance_70_N,PRIORITY_REQUESTED,north,,requested_phase=3; actual_phase=3
+rl,105.0,demo_ambulance_70_N,LEFT_SIMULATION,N,,Not present after this simulation window
+rl,360.0,demo_ambulance_360_W,INSERTED,W,E0,magenta ambulance
+rl,440.0,demo_ambulance_360_W,VISIBLE,W,E0,Vehicle has entered simulation
+rl,445.0,demo_ambulance_360_W,PRIORITY_REQUESTED,west,,requested_phase=2; actual_phase=2
+rl,450.0,demo_ambulance_360_W,PRIORITY_REQUESTED,west,,requested_phase=2; actual_phase=2
+rl,455.0,demo_ambulance_360_W,LEFT_SIMULATION,W,,Not present after this simulation window

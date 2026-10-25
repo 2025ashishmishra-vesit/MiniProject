@@ -15,6 +15,26 @@ st.set_page_config(
     layout="wide",
 )
 
+st.markdown("""
+<style>
+/* Force both Streamlit video containers to the same height */
+div[data-testid="stVideo"] {
+    height: 350px !important;
+    overflow: hidden !important;
+    background: black !important;
+}
+
+/* Force the video element to fill that container */
+div[data-testid="stVideo"] video {
+    width: 100% !important;
+    height: 350px !important;
+    max-height: 350px !important;
+    object-fit: contain !important;
+    background: black !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 # ---------------------------------------------------------
 # PATHS
@@ -70,6 +90,35 @@ st.markdown(
     against the trained **D3QN Reinforcement Learning Controller**.
     """
 )
+
+st.divider()
+
+# ---------------------------------------------------------
+# RECORDED SUMO SIMULATIONS (independent of evaluation CSVs)
+# ---------------------------------------------------------
+
+st.header("🎬 SUMO Simulation Playback")
+st.caption("Recorded fixed-time and D3QN RL simulations (30 seconds each).")
+
+VIDEO_DIR = Path(__file__).resolve().parent / "videos"
+fixed_video = VIDEO_DIR / "fixed_time.mp4"
+rl_video = VIDEO_DIR / "rl_controlled.mp4"
+
+video_left, video_right = st.columns(2)
+
+with video_left:
+    st.subheader("🔴 Fixed-Time Control")
+    if fixed_video.is_file():
+        st.video(str(fixed_video), format="video/mp4")
+    else:
+        st.info(f"Video missing: {fixed_video.name}. Place it in dashboard/videos/.")
+
+with video_right:
+    st.subheader("🟢 D3QN RL Control")
+    if rl_video.is_file():
+        st.video(str(rl_video), format="video/mp4")
+    else:
+        st.info(f"Video missing: {rl_video.name}. Place it in dashboard/videos/.")
 
 st.divider()
 
